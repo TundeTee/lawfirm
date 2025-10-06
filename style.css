@@ -64,12 +64,12 @@ header .navbar li a{
 }
 
 .content{
-    width: 100%;
+    width: 95%;
     height: 700px;
     background: url(image/bar.jpg);
     justify-self: center;
     align-self: center;
-    margin-left: 10px;
+    margin-left: -10px;
 }
 .mobile{
     margin-top: 45px;
