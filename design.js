@@ -50,6 +50,7 @@ form.addEventListener('submit', function(e) {
   
 document.getElementById('chatClose').onclick = function() {
   document.getElementById('chatPopup').style.display = 'none';
+  document.getElementById('chatForm-2').style.display = 'none';;
 };
 
 document.getElementById('chat').onclick = function() {
