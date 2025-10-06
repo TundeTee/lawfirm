@@ -107,7 +107,7 @@ header .navbar li a{
     top: 500px;
     position: absolute;
     background: blue;
-    width: 400px;
+    width: 300px;
     height: 300px;
     animation: flip 3s ease 1 normal ;
 }
@@ -125,7 +125,7 @@ header .navbar li a{
     margin-left: 20px;
 }
 .box button{
-    margin-left: 250px;
+    margin-left: 200px;
     padding: 14px;
     background: rgba(0, 0, 0, 0.3);
     outline: none;
@@ -435,7 +435,7 @@ margin-top: 10px;
     justify-content: center;
     align-items: center;
     height: 250px;
-    margin-top: 520px;
+    margin-top: 620px;
 }
 .foot{
     margin-top: 400px;
@@ -452,6 +452,7 @@ margin-top: 10px;
 }
 .box{
     left: 0;
+    height: 400px;
 }
 .word{
  margin-left: 0;
@@ -492,6 +493,7 @@ margin-top: 10px;
 }
 .content{
     height: 550px;
+    
 }
 .cancel{
     position: absolute;
