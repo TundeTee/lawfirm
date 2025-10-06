@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+z-index: 999;
+ top: 0;
+ left: 0;
+ position: sticky;
+}
+.shadow{
+    position: absolute;
+    height: 1px;
+    background: white;
+    width: 100%;
+    box-shadow: 1px 2px 9px 2px #888888;
+    margin-bottom: 10px;
+    
+}
+.head{
+    /* margin-top: -10px; */
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 120px;
+}
+
+.logo, .navbar{
+    margin-top: 30px;
+}
+
+.head .logo h1{
+    padding: 20px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 90px;
+}
+
+.head .logo span{
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+     font-size: 18px;
+}
+
+.head .navbar ul{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    margin-right: 100px;
+}
+header .navbar li {
+    padding-left: 20px;
+   
+}
+header .navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    width: 90%;
+    height: 700px;
+    background: url(image/bar.jpg);
+    justify-self: center;
+    align-self: center;
+}
+.mobile{
+    margin-top: 45px;
+    font-size: 30px;
+    margin-right: 30px;
+    display: none;
+}
+.word{
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 200px;
+    animation: flipdown 2s ease 1 normal ;
+}
+.word button{
+    margin-top: 20px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+.word button a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.word button:hover{
+    background: black;
+    border-radius: 50px;
+}
+.box{
+    right: 0 ;
+    top: 500px;
+    position: absolute;
+    background: blue;
+    width: 400px;
+    height: 300px;
+    animation: flip 3s ease 1 normal ;
+}
+
+.box h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 10px 5px 10px;
+}
+.box p{
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    margin-left: 20px;
+}
+.box button{
+    margin-left: 250px;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border-bottom-left-radius: 20px ;
+}
+.box button:hover{
+    background: black;
+}
+.box button a{
+    color: white;
+    text-decoration: none;
+}
+
+.business{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.business .law{
+    width: 250px;
+    height: 250px;
+    background: whitesmoke;
+    border-bottom-left-radius: 20px ;
+}
+
+.business .law h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    font-style: italic;
+    animation: scaleup 3s ease 1 normal ;
+}
+.business .law h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.business .law p{
+    padding-left: 10px;
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 10px;
+    line-height: 20px;
+}
+.business .law button{
+    font-size: 12px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border-bottom-left-radius: 20px ;
+}
+.business .law button a{
+    color: white;
+    text-decoration: none;
+   padding-left: 10px;
+}
+.business .law button:hover{
+    background: black;
+}
+.chat{
+    position: fixed;
+    bottom: 20px;
+  right: 20px;
+  font-size: 35px;
+color: white;
+border-radius: 50%;
+padding: 5px;
+background: black;
+}
+.chat-form-2{
+  min-height: 220px;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  position: fixed;
+  bottom: 100px;
+  z-index: 999;
+  left: 220px;
+  display: none;
+  padding-bottom: 20px;
+}
+.chat-form-2 p{
+    padding: 10px;
+}
+.chat-form-2 label {
+margin-left: 20px;
+margin-top: 10px;
+}
+.chat-form-2 input{
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-left: 20px;
+    background: transparent;
+    border-bottom: 1px solid black;
+    height: 20px;
+}
+.chat-form-2 button{
+  margin-top: 20px;
+  padding: 5px;
+  width: 80%;
+  font-size: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  border: none;
+  background: #07324e ;
+  color: white;
+
+}
+.chat-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  background: #f3f6f8;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  font-family: Arial, serif;
+  overflow: hidden;
+  border: none;
+  display: none;
+}
+.chat-popup.active{
+    display: active;
+}
+.chat-header {
+  background: blue;
+  color: #fff;
+  padding: 16px 18px 10px 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+}
+.chat-close {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+.chat-status {
+  padding: 8px 18px;
+  font-size: 14px;
+  color: #fff;
+  background: blue;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.chat-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #2ecc40;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.chat-body {
+  min-height: 300px;
+  background: #e9ecef;
+  margin: 0;
+  padding: 0;
+}
+.chat-reply{
+   /* min-height: 100px; */
+  background: #e9ecef;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.chat-form {
+  background: #f3f6f8;
+  padding: 0;
+  border-top: 1px solid #e0e0e0;
+}
+.chat-input-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 3px;
+}
+.chat-input-row input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #fff;
+}
+.chat-icon {
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  margin: 0 2px;
+}
+.chat-attach {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.chat-send {
+  background: #07324e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.emoji-picker {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin: 0 16px 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  gap: 8px;
+}
+
+
+.emoji-picker span {
+  cursor: pointer;
+  font-size: 1.3em;
+  transition: transform 0.2s;
+}
+.emoji-picker span:hover {
+  transform: scale(1.2);
+}
+.foot{
+    margin-top: 80px;
+    background: blue;
+    display: flex;
+    height: 170px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.foot-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    padding: 20px;
+    color: white;
+}
+.foot-logo h1{
+    font-size: 20px;
+    
+}
+.address{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+    color: #e0e0e0;
+}
+@keyframes scaleup {
+    0%{
+        scale:0.5;
+    }
+    100%{
+        scale:1;
+    }
+}
+
+@keyframes flip {
+  0%{
+
+    }
+    100%{
+        transform: translateX(100%);
+    }   
+}
+@keyframes flipdown {
+  0%{
+
+    }
+    100%{
+        transform: translateY(100%);
+    }   
+}
+@media (max-width: 900px) {
+.head .logo h1{
+    margin-left: 0;
+}
+.business{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin-top: 520px;
+}
+.foot{
+    margin-top: 400px;
+    flex-direction: column;
+    height: 350px;
+     gap: 10px;
+     justify-content: center;
+     width: 100%;
+     text-align: center;
+}
+.foot-logo{
+    width: 100%;
+    
+}
+.box{
+    left: 0;
+}
+.word{
+ margin-left: 0;
+ font-size: 28px;
+}
+    .mobile{
+        display: block;
+    }
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.9);
+    
+}
+.navbar{
+    display: none;
+}
+.navbar.active{
+    display: block;
+}
+.navbar ul{
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 45px;
+    width: 100%;
+   text-align: center;
+}
+.navbar ul li{
+    border-bottom: 1px solid white;
+    padding: 20px;
+   
+}
+.navbar ul li a{
+    color: white;
+     
+}
+.content{
+    height: 550px;
+}
+.cancel{
+    position: absolute;
+    right: 25px;
+    z-index: 1000;
+    font-size: 30px;
+    color: white;
+    top: 45px;
+}
+}
