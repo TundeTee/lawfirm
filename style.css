@@ -36,6 +36,7 @@ z-index: 999;
     padding: 20px;
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s all;
     margin-left: 90px;
 }
 
@@ -51,17 +52,25 @@ z-index: 999;
     display: flex;
     padding-top: 20px;
     margin-right: 100px;
+    transition: 0.3s all;
 }
 header .navbar li {
     padding-left: 20px;
-   
+   transition: 0.3s all ease-in-out;
+}
+.navbar li:hover,
+.head .logo h1:hover{
+transform: scale(1.2);
+
 }
 header .navbar li a{
     text-decoration: none;
     font-size: 20px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s all ease-in-out;
 }
+
 .navbar li a:hover,
 .navbar li a.active{
 text-transform: uppercase;
@@ -455,8 +464,12 @@ iframe{
     font-size: 20px;
 }
 .left-icon{
-    justify-content: center;
     justify-self: center;
+    color: blue;
+    transition: 0.3s all;
+}
+.left-icon:hover{
+    transform: scale(2);
 }
 .right-side form input{
     width: 100%;
@@ -576,6 +589,7 @@ iframe{
 }
 .content{
     height: 550px;
+    width: 90%;
 }
 .cancel{
     position: absolute;
