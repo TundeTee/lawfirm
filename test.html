@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css">
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"></script>
+</head>
+<body>
+    <input type="tel" id="phone" name="phone">
+<script>
+    const input = document.querySelector("#phone");
+const iti = window.intlTelInput(input, {
+  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js", // Required for formatting and validation
+  initialCountry: "us", // Set a default country (e.g., United States)
+  preferredCountries: ["us", "gb", "ca"], // Add preferred countries to appear at the top of the dropdown
+  separateDialCode: true, // Display the dial code separately from the number
+});
+input.addEventListener("countrychange", function() {
+  const countryData = iti.getSelectedCountryData();
+  console.log("Selected country dial code:", countryData.dialCode);
+});
+</script>
+</body>
+</html>

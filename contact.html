@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Template Contact</title>
     <link rel="stylesheet" href="style.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
 />
-
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css">
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"></script>
 </head>
 <body>
 <header>
@@ -19,12 +21,12 @@
     <div class="logo"><h1>Tunde Taiwo Okunola <span>Esq.</span></h1></div>
 <div class="navbar">
     <ul>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="service.html">Services</a></li>
         <li><a href="Pricing.html">Pricing</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active"  href="contact.html">Contact</a></li>
     </ul>
 </div>
 <div class="mobile">
@@ -34,54 +36,39 @@
     <i class="ri-close-large-line"></i>
 </div>
 </div> 
-  </header>  
-<section class="content">
-<div class="word">
-    <p>Founded in 2020,</p>
-    <p>Tunde Taiwo Okunola Specializes in labor Law</p>
-<button><a href="#">Learn More</a></button>
+  </header>
+<section class="contact-body">
+<div class="left-side">
+  <p>
+TRUST YOUR LAW CASE TO OUR EXPERIENCED TEAM. 
+CONTACT US FOR A FREE CASE EVALUATION.</p>
+<p class="add">Address <br>
+  <span>No. 17, Obiesan Office Complex, Beside B.K Petroleum,Orita-Aperin, Omowunmi/Olorunsogo Road, Ibadan, Oyo State of Nigeria
+</span></p>
+<p class="add">Email <br>
+  <span>Otundetaiwo@yahoo.com</span></p>
+<p>Tel <span>08065353147</span></p>
+<div class="left-icon">
+  <i class="ri-facebook-fill"></i>
 </div>
-<div class="box">
-    <h3>Introducing Our Law Firm</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse adipisci id perferendis, odio iusto voluptatem voluptate qui commodi veniam, aliquam cumque laborum porro ad ipsam quo veritatis dolorem magni quis fuga aspernatur fugit quasi. Odio dolor voluptatibus iste distinctio neque?
-    </p>
-    <button><a href="#">Learn More</a></button>
 </div>
-</section>
-<section class="business">
-    <div class="law">
-        <div class="law-word">
-        <h1>01.</h1>
-    <h3>Criminal Law</h3>
-    <p>Criminal law is the body of law that deals with crime and its punishment. A crime is any act or omission that violates a law forbidding or commanding it. Criminal law differs from civil law, which deals with disputes between individuals or organizations. Criminal law is concerned with offenses against the state or society as a whole.</p></div>
-     <div class="law-btn">
-    <button><a href="#">Learn More</a></button></div>
-    </div>
-    <div class="law">
-        <div class="law-word">
-        <h1>02.</h1>
-    <h3>labor Law</h3>
-    <p>Labor law, also known as employment law, governs the relationship between employers and employees. It covers a wide range of topics, including wages and hours, working conditions, and the right to organize and bargain collectively. The primary goal of labor law is to protect the rights of workers and promote fair and safe working conditions.</p></div>
-    <div class="law-btn">
-    <button><a href="#">Learn More</a></button></div>
-    </div>
-    <div class="law">
-        <div class="law-word">
-        <h1>03.</h1>
-    <h3>Police Custody</h3>
-    <p>Police law, also known as law enforcement law, is the body of law that governs the activities of police officers and other law enforcement agencies. It encompasses a wide range of legal principles and rules that regulate how police officers conduct their duties, ensuring that they act within the bounds of the law while maintaining public safety and order. The primary goals of police law are to protect the rights of individuals, prevent abuse of power, and promote effective law enforcement.</p></div>
-    <div class="law-btn">
-    <button><a href="#">Learn More</a></button></div>
-    </div>
-    <div class="law">
-    <div class="law-word">
-        <h1>04.</h1>
-    <h3>Social Right</h3>
-    <p>Social rights are a set of entitlements and freedoms that aim to ensure a basic standard of living and equal opportunities for all individuals within a society. These rights are considered essential for human dignity and well-being and are often enshrined in national constitutions and international human rights treaties. Unlike civil and political rights, which primarily protect individuals from state interference, social rights require active measures by the state to ensure their fulfillment.</p></div>
-     <div class="law-btn">
-    <button><a href="#">Learn More</a></button></div>
-    </div>
-</section>
+<div class="right-side">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126606.23896276393!2d3.80833124538026!3d7.415905397238265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10399265f5fc325d%3A0x1d6827a717767d1a!2sB.K.%20Petroleum%20Nigeria%20Limited!5e0!3m2!1sen!2sng!4v1759951138449!5m2!1sen!2sng" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <form >
+  <label for="chatName">Firstname</label>
+  <input type="text" id="chatName" required>
+  <label for="chatName">Lastname</label>
+  <input type="text" id="chatName" required>
+  <label for="chatEmail">Email</label>
+  <input type="email" id="chatEmail" required>
+  <label for="chatPhone">Phone</label>
+  <input type="tel" id="phone" name="phone">
+  <label for="codition">Enter your message here....</label>
+  <textarea name="" id="" cols="20" rows="5" required></textarea>
+  <button type="submit">Submit</button>
+  </form>
+</div>
+</section>  
 <section class="chat" id="chat">
     <i class="ri-chat-smile-3-line"></i>
 </section>

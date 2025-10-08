@@ -88,3 +88,13 @@ document.getElementById('chatForm').onsubmit = function(e) {
   form.style.display = 'block';
 };
 
+const input = document.querySelector("#phone");
+const iti = window.intlTelInput(input, {
+  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js", // Required for formatting and validation
+  initialCountry: "ng", // Set a default country (e.g., United States)
+  preferredCountries: ["ng","us", "gb", "ca"], // Add preferred countries to appear at the top of the dropdown
+  separateDialCode: true, // Display the dial code separately from the number
+});
+input.addEventListener("countrychange", function() {
+  const countryData = iti.getSelectedCountryData();
+});
