@@ -79,13 +79,12 @@ color: blue;
 }
 
 .content{
-    width: 90%;
+    width: 500px;
     justify-self: center;
     height: 700px;
     background: url(image/bar.jpg);
-    background-position: contain;
-   
 }
+
 .mobile{
     margin-top: 45px;
     font-size: 30px;
@@ -126,12 +125,14 @@ color: blue;
     background: blue;
     width: 300px;
     height: 400px;
-    animation: flip 3s ease 1 normal ;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 80px;
     margin-bottom: 20px;
+    transition: 0.4s ease-in-out all;
 }
-
+.box:hover{
+    transform: scale(1.1);
+}
 .box h3{
     font-size: 20px;
     color: white;
@@ -226,12 +227,12 @@ color: blue;
 .chat{
     position: fixed;
     bottom: 20px;
-  right: 20px;
-  font-size: 35px;
-color: white;
-border-radius: 50%;
-padding: 5px;
-background: black;
+    right: 20px;
+    font-size: 35px;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    background: black;
 }
 .chat-form-2{
   min-height: 220px;
@@ -252,8 +253,8 @@ background: black;
     padding: 10px;
 }
 .chat-form-2 label {
-margin-left: 20px;
-margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 .chat-form-2 input{
     border: none;
@@ -265,15 +266,15 @@ margin-top: 10px;
     height: 20px;
 }
 .chat-form-2 button{
-  margin-top: 20px;
-  padding: 5px;
-  width: 80%;
-  font-size: 20px;
-  margin-left: 20px;
-  border-radius: 20px;
-  border: none;
-  background: #07324e ;
-  color: white;
+    margin-top: 20px;
+    padding: 5px;
+    width: 80%;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    background: #07324e ;
+    color: white;
 
 }
 .chat-popup {
@@ -402,7 +403,7 @@ margin-top: 10px;
   transform: scale(1.2);
 }
 .foot{
-    margin-top: 20px;
+    margin-top: 40px;
     background: blue;
     display: flex;
     height: 170px;
@@ -471,13 +472,11 @@ iframe:hover{
     font-size: 20px;
 }
 .left-icon{
-    justify-self: center;
+   margin-left: 200px;
     color: blue;
     transition: 0.3s all;
 }
-.ri-facebook-fill{
-   justify-self: center; 
-}
+
 .left-icon:hover{
     transform: scale(2);
 }
@@ -599,7 +598,7 @@ iframe:hover{
 }
 .content{
     height: 550px;
-    width: 80%;
+    width: 95%;
 }
 .cancel{
     position: absolute;
