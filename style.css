@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
 z-index: 999;
  top: 0;
@@ -82,7 +83,8 @@ color: blue;
     justify-self: center;
     height: 700px;
     background: url(image/bar.jpg);
-   background-position: contain;
+    background-position: contain;
+   
 }
 .mobile{
     margin-top: 45px;
@@ -431,6 +433,7 @@ margin-top: 10px;
 .contact-body{
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 .left-side{
     width: 60%;
@@ -454,6 +457,10 @@ margin-top: 10px;
 }
 iframe{
     width: 80%;
+    transition: 0.3s all ease-out;
+}
+iframe:hover{
+     transform: scale(1.1);
 }
 .right-side form{
     margin-top: 20px;
@@ -467,6 +474,9 @@ iframe{
     justify-self: center;
     color: blue;
     transition: 0.3s all;
+}
+.ri-facebook-fill{
+   justify-self: center; 
 }
 .left-icon:hover{
     transform: scale(2);
@@ -507,7 +517,7 @@ iframe{
         transform: translateY(100%);
     }   
 }
-@media (max-width: 769px) {
+@media (max-width: 900px) {
 .head .logo h1{
     margin-left: 0;
     font-size: 19px ;
@@ -589,7 +599,7 @@ iframe{
 }
 .content{
     height: 550px;
-    width: 90%;
+    width: 80%;
 }
 .cancel{
     position: absolute;
