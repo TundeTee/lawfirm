@@ -421,15 +421,14 @@ margin-top: 10px;
 }
 .contact-body{
     display: flex;
-    flex-direction: row;
     width: 100%;
 }
 .left-side{
-    width: 50%;
+    width: 60%;
 
 }
 .left-side p{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bolder;
     padding: 10px;
     text-align: center;
@@ -441,21 +440,22 @@ margin-top: 10px;
 }
 
 .right-side{
-    width: 50%;
-    margin-left: 120px;
+    width: 40%;
+    margin-left: 50px;
+}
+iframe{
+    width: 80%;
 }
 .right-side form{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 80%;
     gap: 10px;
     font-size: 20px;
 }
 .left-icon{
     justify-content: center;
-    align-items: center;
-    align-self: center;
     justify-self: center;
 }
 .right-side form input{
@@ -529,7 +529,6 @@ margin-top: 10px;
 }
 .right-side{
     margin-top: 40px;
-    margin-left: 40px;
      width: 100%;
 }
 .box{
@@ -537,7 +536,6 @@ margin-top: 10px;
     height: 350px;
     width: 90%;
     justify-self: center;
-    d
 }
 .word{
  margin-left: 0;
